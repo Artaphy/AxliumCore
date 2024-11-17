@@ -1,0 +1,6 @@
+name: AxliumCore
+version: '1.0.0-SNAPSHOT'
+main: me.artaphy.axliumcore.AxliumCore
+api-version: '1.21'
+authors: [ Artaphy ]
+description: A Minecraft plugin framework for easy customization and extension.
