@@ -11,23 +11,36 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 
 /**
- * Enhanced Logger that extends Java's Logger with additional features
+ * Enhanced logging system with advanced features
  * <p>
- * This class provides enhanced logging capabilities with:
+ * This class provides:
  * <ul>
- *     <li>Multiple log levels (INFO, WARN, ERROR, DEBUG)</li>
- *     <li>Plugin-specific prefixing</li>
- *     <li>Debug mode support</li>
- *     <li>Formatted message support</li>
+ *     <li>Multiple logging levels with prefix support</li>
+ *     <li>Debug mode for development</li>
+ *     <li>Asynchronous logging capabilities</li>
  *     <li>Stack trace formatting</li>
- *     <li>Asynchronous logging</li>
  * </ul>
+ * 
+ * Features:
+ * <ul>
+ *     <li>Plugin-specific prefixing</li>
+ *     <li>Formatted message support</li>
+ *     <li>Batch message logging</li>
+ *     <li>Error tracking and reporting</li>
+ * </ul>
+ * 
+ * Usage example:
+ * <pre>
+ * logger.debug("Processing configuration...");
+ * logger.info("Server started on port %d", port);
+ * logger.error("Failed to load config", exception);
+ * </pre>
  *
  * @author Artaphy
  * @version 1.0
  * @since 1.0
  */
-@SuppressWarnings("unused")
+@SuppressWarnings("all")
 public class Logger extends java.util.logging.Logger {
     private final Plugin plugin;
     private boolean debugMode;

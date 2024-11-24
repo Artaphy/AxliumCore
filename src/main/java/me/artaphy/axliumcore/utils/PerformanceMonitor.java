@@ -9,15 +9,31 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Level;
 
 /**
- * Performance monitoring utility for tracking execution times and metrics
+ * Performance monitoring and optimization utility
  * <p>
  * This class provides methods to:
  * <ul>
  *     <li>Track method execution times</li>
  *     <li>Monitor memory usage</li>
- *     <li>Detect performance issues</li>
+ *     <li>Detect performance bottlenecks</li>
+ *     <li>Generate performance reports</li>
  * </ul>
  * 
+ * Monitoring features:
+ * <ul>
+ *     <li>Execution time tracking</li>
+ *     <li>Memory usage analysis</li>
+ *     <li>Automatic warning triggers</li>
+ *     <li>Performance statistics</li>
+ * </ul>
+ * 
+ * Usage example:
+ * <pre>
+ * PerformanceMonitor.startTiming("database.query");
+ * // ... perform database operation ...
+ * PerformanceMonitor.stopTiming("database.query");
+ * </pre>
+ *
  * @author Artaphy
  * @version 1.0
  * @since 1.0

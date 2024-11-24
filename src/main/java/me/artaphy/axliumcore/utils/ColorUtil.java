@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
  * @version 1.0
  * @since 1.0
  */
-@SuppressWarnings("unused")
+@SuppressWarnings("all")
 public class ColorUtil {
     // Regular expression patterns
     private static final Pattern HEX_PATTERN = Pattern.compile("&\\{#([A-Fa-f0-9]{6})}");
